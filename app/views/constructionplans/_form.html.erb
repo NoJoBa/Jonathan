@@ -1,4 +1,4 @@
-<%= form_for(constructionplan) do |f| %>
+<%= form_for(constructionplan, html: {multipart: true}) do |f| %>
   <% if constructionplan.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(constructionplan.errors.count, "error") %> prohibited this constructionplan from being saved:</h2>
@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :picture %>
-    <%= f.text_field :picture %>
+    <%= f.file_field :picture %>
   </div>
 
   <div class="actions">

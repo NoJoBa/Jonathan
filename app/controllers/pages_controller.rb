@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   def destinations
   end
   def construction
+    @constructionplan = Constructionplan.find(1)
   end
 
 end

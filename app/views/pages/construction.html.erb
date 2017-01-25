@@ -7,4 +7,4 @@
   <li>...<li/>
   </ul>
   <p> Unten abgebildet sehen Sie einen Teil der Pläne nach denen die Yacht gebaut wurde</p>
-<img src="/IMG-20170122-WA0015.jpg">
+  <%= image_tag(@constructionplan.picture_url, width: 600) if @constructionplan.picture.present? %>
