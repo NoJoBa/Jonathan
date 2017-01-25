@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Header:</strong>
+  <%= @constructionplan.header %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @constructionplan.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @constructionplan.picture %>
+</p>
+
+<%= link_to 'Edit', edit_constructionplan_path(@constructionplan) %> |
+<%= link_to 'Back', constructionplans_path %>

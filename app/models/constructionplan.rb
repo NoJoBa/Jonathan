@@ -1,0 +1,2 @@
+class Constructionplan < ApplicationRecord
+end

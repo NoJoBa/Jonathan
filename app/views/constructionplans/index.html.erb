@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Constructionplans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @constructionplans.each do |constructionplan| %>
+      <tr>
+        <td><%= constructionplan.header %></td>
+        <td><%= constructionplan.description %></td>
+        <td><%= constructionplan.picture %></td>
+        <td><%= link_to 'Show', constructionplan %></td>
+        <td><%= link_to 'Edit', edit_constructionplan_path(constructionplan) %></td>
+        <td><%= link_to 'Destroy', constructionplan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Constructionplan', new_constructionplan_path %>

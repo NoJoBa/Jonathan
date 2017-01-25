@@ -1,0 +1,1 @@
+json.array! @constructionplans, partial: 'constructionplans/constructionplan', as: :constructionplan

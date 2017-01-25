@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :constructionplans
   root 'pages#main'
   get 'pages/general'
   get 'pages/general2'
