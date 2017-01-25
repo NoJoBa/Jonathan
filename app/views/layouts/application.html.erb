@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather|Signika" rel="stylesheet">
+    <title>Jonathan</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div>
+     <h1>Möwe Jonathan-Die Segelyacht meines Opas</h1>
+   </div>
+   <nav>
+      <%= link_to "Home", root_path%>
+      <%= link_to "Allgemeines", pages_general_path%>
+      <%= link_to "'Lebenslauf'", pages_general2_path%>
+      <%= link_to "Reiseorte", pages_destinations_path%>
+      <%= link_to "Bau", pages_construction_path%>
+    <%= yield %>
+
+
+  </body>
+</html>
