@@ -34,7 +34,8 @@
 body{
   background-color: #D0F7E9;
 }
-footer { margin-top: 50px; margin-left:50px;font-size: 30px;color: #920E18;text-align: center;text-decoration:underline;}
+footer { margin-top: 50px; margin-left:50px;font-size: 30px;color: #920E18;
+  text-align: center;text-decoration:underline;}
 
 img{
   width: 100%;
@@ -49,7 +50,7 @@ h2{
 }
 p{
   line-height: 25px;
-  font-family:'Lora'
+  font-family:'Lora';
 
 }
 a{
