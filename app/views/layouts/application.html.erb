@@ -20,7 +20,20 @@
       <%= link_to "Reiseorte", pages_destinations_path%>
       <%= link_to "Bau", pages_construction_path%>
     <%= yield %>
-
+    <footer>
+          <div class="container">
+            Kontakt
+          </div>
+        </footer>
+<label for="Betreff:">Betreff</label>
+<input type="text" id="Betreff:">
+<label for="Nachricht:">Nachricht</label>
+<textarea id="Nachricht:"></textarea>
+<label for="Meine Email-Adresse:">Meine Email-Adresse:</label>
+<input type="text" id="Meine Email-Adresse:">
+<label for="benachrichtigung">Ich möchte eine Benachrichtigung erhalten, wenn es Neues zur Jonathan gibt!</label>
+<input type="checkbox" id="benachrichtigung">
+<input type="submit" value="Senden">
 
   </body>
 </html>
