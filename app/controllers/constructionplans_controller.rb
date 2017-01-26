@@ -4,7 +4,7 @@ class ConstructionplansController < ApplicationController
   # GET /constructionplans
   # GET /constructionplans.json
   def index
-    @constructionplans = Constructionplan.all
+    @construction_plans = Constructionplan.all
   end
 
   # GET /constructionplans/1
