@@ -91,6 +91,9 @@ textarea{
 }
 input[type=checkbox]{
   margin: 10px auto 10px auto;
-  width: 50%;
+  width: 50%
 
+}
+li[type=span]{
+  color: green;
 }
