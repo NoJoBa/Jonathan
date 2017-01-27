@@ -9,12 +9,11 @@
 
         <li><span style="font-size:20px;">  <%= link_to constructionplan.header, constructionplan %></span>
 
-      
-      <%= link_to 'Edit', edit_constructionplan_path(constructionplan) %>
-        <%= link_to 'Destroy', constructionplan, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      <span style="font-size:5px"><%= link_to 'Bearbeiten', edit_constructionplan_path(constructionplan) %></span>
+      <span style="font-size:5px"><%= link_to 'Löschen', constructionplan, method: :delete, data: { confirm: 'Are you sure?' } %></span></li>
 
     <% end %>
 </ul>
 
 
-<%= link_to 'New Constructionplan', new_constructionplan_path %>
+<%= link_to 'Neue Seite zum Bau', new_constructionplan_path %>
