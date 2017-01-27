@@ -1,17 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Header:</strong>
-  <%= @constructionplan.header %>
-</p>
 
 <p>
-  <strong>Description:</strong>
   <%= @constructionplan.description.html_safe %>
 </p>
 
 <p>
-  <strong>Picture:</strong>
+  
   <%= image_tag(@constructionplan.picture_url, width: 600) if @constructionplan.picture.present? %>
 </p>
 
